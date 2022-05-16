@@ -11,7 +11,7 @@ env:
   BUILD_TYPE: Release
 
 jobs:
-  build_hello_world_application:
+  hello_world_application:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,8 +26,7 @@ jobs:
           cd build
           make
           ./hello_world
-
-   sovler_application:
+  sovler_application:
     runs-on: ubuntu-latest
 
     steps:
@@ -42,4 +41,3 @@ jobs:
             cd build
             make
             ./equation
-      
